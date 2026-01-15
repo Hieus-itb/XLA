@@ -183,7 +183,7 @@ class ObjectCounterApp:
 2. Nhấn "Xử Lý" để đếm vật thể
 3. Nhấn "Lưu Kết Quả" để lưu ảnh
 
-💡 Lưu ý: Ảnh nên có nền
+Lưu ý: Ảnh nên có nền
 đơn giản và vật thể tách biệt
 rõ ràng để kết quả tốt nhất.
         """
@@ -235,7 +235,7 @@ rõ ràng để kết quả tốt nhất.
 
         contours, _ = cv2.findContours(opening, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-        min_area = 100
+        min_area = 3000
         valid_contours = [cnt for cnt in contours if cv2.contourArea(cnt) > min_area]
 
         # Vẽ kết quả
